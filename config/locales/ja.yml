@@ -1,0 +1,10 @@
+ja:
+  enums:
+    task:
+      status:
+        todo: 未着手 
+        in_progress: 進行中
+        review: レビュー中
+        approved: Approved
+        finished: 完了
+        backlog: 中止

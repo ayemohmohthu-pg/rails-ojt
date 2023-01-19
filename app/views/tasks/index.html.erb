@@ -1,0 +1,30 @@
+<table class="tbl">
+  <thead>
+    <tr>
+      <th>＃</th>
+      <th>Task</th>
+      <th>Status</th>
+      <th>Deadline</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @tasks.each_with_index do |t, i| %>
+    <tr>
+      <td><%= i+1 %></td>
+      <td><%= t.name %></td>
+      <td><%= t.status.to_s %></td>
+      <td><%= t.deadline %></td>
+      <td>
+        <!-- 次のタスク詳細取得画面へのリンク -->
+        <a href="/tasks/<%= t.id %>">edit</a>
+      </td>
+      <td>
+        <!-- まだ実装しない -->
+      　　 <button type="submit">delete</button>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
